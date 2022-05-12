@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.section-heading{
+  padding-top: 15px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #27285C;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.section-design{
+    margin-top: 5rem;
+    width: 100%;
+    height: 80vh;
+    padding-bottom: 3rem;
+    background-color: #e4ebe5;
+}
+
+.Know-More{
+  background-color: green;
+  color: white;
+  margin-top: 10px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5%;
+  font-size: 1em;
+  border: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 8px 6px black;
+}
+.Know-More:hover{
+  background-color: white;
+  color: black;
+  border: 1px;
+  box-shadow: 8px 6px green;
+}
+.Change-Button{
+  margin-top: 6rem;
+}
+.Change-Next{
+  color: white;
+  margin-left: 3.5rem ;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5%;
+  font-size: 1em;
+  border: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Change-Next:hover{
+  background-color: white;
+  color: black;
+  border: 1px;
+}
+
+.Change-Prev{
+  color: white;
+  margin-right: 3.5rem;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5%;
+  font-size: 1em;
+  border: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: rotate(180deg);
+}
+.Change-Prev:hover{
+  background-color: white;
+  color: black;
+  border: 1px;
+}
+
+
+/*Navbar*/
+#navbar-container{
+  background-color: #e4ebe5;
+  height: 6em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#navbar-container .navbar-logo{
+  width: 20%;
+  height: 100%;
+}
+#navbar-container .navbar-logo img{
+  height: 100%;
+  margin-left: 6em;
+  border-radius: 50%;
+}
+
+#navbar-container .navbar-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+#navbar-container .navbar-links a{
+  margin: 3rem;
+  font-size: 1.2rem;
+  color: aliceblue;
+  text-decoration: none;
+  color: black;
+}
+
+/*Navbar End*/
+
+/* Home Slider*/
+#home-container{
+  width: 100%;
+  height: 50vh;
+}
+
+#home-container .home-holder{
+height: 90vh;
+width: 100%;
+animation: slider 10s infinite linear;
+animation-delay: 3s;
+transition: 10s;
+background-image: url("./Images/wave\ holder.jpg");
+background-size: 100% 100%;
+/* animation-delay: 5s; */
+}
+
+/*Home Slider End*/
+
+/*Home About Content*/
+.home-about{
+  display: flex;
+  justify-content: center;
+  margin: 60px 200px 0px 200px;
+  /* align-items: center; */
+}
+
+.home-about-content{
+    height: 100%;
+    width: 101%;
+    position: relative;
+    border: 10px solid white;
+}
+.home-about-content::after{
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: -35px;
+    height: 110%;
+    width: 140%;
+    border: 2px solid green;
+    z-index: -1;
+}
+
+.home-about-content h1{
+  margin-bottom: 10px;
+}
+
+.home-about-content p{
+  text-align: left;
+  margin-right: 20px;
+  line-height: 1.2;
+  font-size: 1.2rem;
+  font-family: 'Barlow', sans-serif;
+  letter-spacing: 1px;
+}
+
+.home-about-image img{
+  margin-top: 40px;
+  margin-bottom: 2px;
+  box-shadow: 10px 10px green;
+}
+/*Home About Content End */
+
+/*Home Projects*/
+  .home-projects{
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+    background-color: #e4ebe5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .home-projects-cards{
+  
+     margin: 10px 25px 10px 150px;
+     /* background-color: aqua; */
+     display: grid;
+     grid-template-columns: 30% 30% 30%;
+     gap: 20px;
+     text-align: center;
+  }
+
+  .home-projects-card{
+     background-color: white;
+     border-radius: 20px;
+     height: 20rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    justify-content: center;
+    
+  }
+
+  .home-projects-cards :hover{
+    box-shadow: 0px 0px 10px 0px #0000002c;
+  }
+
+  .home-projects-card-img img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20%;
+    width: 50%;
+  }
+
+  .home-projects-card-heading{
+    font-family: 'Cormorant Garamond', serif;
+  }
+/*Home Projects Ends*/
+
+/*Home Products */
+ #home-products{
+   margin-top: 5rem;
+   width: 100%;
+   background-color: #e4ebe5;
+ }
+ #home-products h1{
+  padding-top: 15px;
+  margin-bottom: 5px ;
+ }
+  .home-product-container{
+    display: flex;
+    flex-direction: row;
+    height: 35rem;
+  }
+ .home-product-menu{
+   width: 30%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   line-height: 2.6rem;
+   background-color: #e4ebe5;
+ }
+
+
+ .home-product-slider{
+   width: 70%;
+   margin-top: 0px;
+   background-image: url("https://newprojects.99acres.com/projects/wave_infratech/wave_dream_homes/images/2rjzua8b.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+/*Home Products Ends*/
+
+/*Intro Video*/
+ #intro-video{
+   margin-top: 5rem;
+    width: 100%;
+    height: 50vh;
+    background-image: url("https://www.wavecity.in/wp-content/uploads/2021/12/wavecity-plots.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+ }
+
+ #intro-video::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to top right, #29323c -27%, #485563 106%);
+  opacity: 0.8;
+  z-index: -1;
+ }
+
+ .intro-video-container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .intro-video-container img{
+   animation: pulse 1.8s infinite linear;
+   box-shadow: 0px 0px 0px 0px green;
+   border-radius: 50%;
+ }
+
+ .intro-video-container h1{
+   text-align: center;
+   font-size: 2rem;
+   letter-spacing: 2.5px;
+   font-family: 'Roboto Flex', sans-serif;
+   text-transform: uppercase;
+   color: white;
+   padding-top: 6rem;
+   margin-bottom: 4rem;
+ }
+
+ /*Intro Video End*/
+
+ /*Location Start*/
+
+ .location-container{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin: 2rem;
+
+ }
+
+.location-map{
+  margin-bottom: 2rem;
+}
+
+.location-content-heading h1{
+   font-size: 1.2rem;
+   font-family: 'Roboto Flex', sans-serif;
+}
+
+.location-content-heading p{
+  font-size: 1rem;
+}
+
+.location-content-body {
+   margin-top: 2rem;
+   list-style: none;
+   font-family: 'Montserrat', sans-serif;
+}
+.location-content-body li{
+  list-style: none;
+  padding: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.location-content-body li::marker{
+  content: '✓';
+  color: green;
+}
+
+/*Location Ends*/
+
+/*Home Loan Start*/
+
+#home-loan{
+    margin-top: 5rem;
+    width: 100%;
+    height: 50vh;
+    padding-bottom: 3rem;
+}
+
+.home-loan-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.home-loan-content{
+  width: 70%;
+  margin-top: 2rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.home-loan-scroll{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 20px;
+  margin-top: 4rem;
+}
+
+.home-loan-card{
+  width: 15rem;
+  height: 8rem;
+  border: 5px solid  #e4ebe5;
+}
+
+#hl-card-1{
+  background-image: url("./Images/IIFMF.jpg");
+  background-position-x: center ;
+  background-position-y: center ;
+  background-size: contain;
+}
+
+#hl-card-2{
+  background-image: url("./Images/indianbulls.png");
+  background-position-x: center ;
+  background-position-y: center ;
+  background-size: cover;
+}
+
+#hl-card-3{
+  background-image: url("data:image/png;base64,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");
+  background-position-x: center ;
+  background-position-y: center ;
+  background-size: cover;
+}
+
+#hl-card-4{
+  background-image: url("https://st.adda247.com/https://wpassets.adda247.com/wp-content/uploads/multisite/sites/5/2021/12/31095331/jpg-9.jpg");
+  background-position-x: center ;
+  background-position-y: center ;
+  background-size: cover;
+}
+
+
+/*Home Loan Ends*/
+
+/*Footer Start*/
+ footer{
+   background-image: url("./Images/footer\ background.jpg");
+   height: 40vh;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+ } 
+
+
+/*Footer Ends*/
+
+/*Key Frames and Media */
+
+@keyframes slider{
+  0% {
+    background-image: url("https://www.nostriarch.com/images/home-new/3-Wave-Hi-Tech-City-Marketing-Pavilion.jpg");
+  }
+  35%{
+    background-image: url("https://im.proptiger.com/1/2016083/6/39659033.jpeg");
+  }
+  70%{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnej9l47HQpBfTloJQJXzK0QD58O7PNaBjSLu_ogB3A3W4Xv2AJDpcYlQi4-5Eb0kqIcA&usqp=CAU");
+  }
+}
+
+@keyframes pulse{
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+/*Key Frames and Media End */
